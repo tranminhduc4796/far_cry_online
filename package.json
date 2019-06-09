@@ -1,0 +1,19 @@
+{
+  "name": "farcryonline",
+  "version": "0.1.0",
+  "description": "A Far Cry launcher",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "find-process": "^1.4.1",
+    "js-sha256": "^0.9.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "electron": "^5.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farcry Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <img class="icon" src="../../assets/minimize.png" alt="" onclick="minimizeWindow()">
+    <img class="icon" id="icon-close" src="../../assets/close.png" alt="" onclick="hideWindow()">
+</nav>
+<div class="content">
+    <label for="game_path_input">Please select the game path</label>
+    <div class="path_input">
+        <input type="text" id="game_path_input">
+        <img class="icon" src="../../assets/folder.png" alt="" onclick="openFileDialog()">
+    </div>
+    <p id="error-mess" hidden>*Please select the game path</p>
+</div>
+<footer>
+    <button id="finish_btn" onclick="submitGamePath()">Finish</button>
+</footer>
+<script src="../../option.js"></script>
+<script src="scripts/function.js"></script>
+</body>
+</html>

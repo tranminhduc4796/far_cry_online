@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Far Cry Online</title>
+<link rel="stylesheet" href="css/sign_in.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div id="window-background__layer"></div>
+<header id="window-header">
+    <button class="option" id="window-header__close">
+        <i class="fas fa-times"></i>
+    </button>
+    <button class="option" id="window-header__minimize">
+        <i class="fas fa-minus"></i>
+    </button>
+</header>
+<main>
+    <div id="window-main__title">
+        <img id="window-main__image" src="../../assets/farcry_logo.png">
+    </div>
+    <div id="window-main__login-form">
+        <div id="error-mess"></div>
+        <input id="user_name" name="username" class="window-main__input" placeholder="Email or Username">
+        <input id="password" name="password" class="window-main__input" type="password" placeholder="Password">
+        <br><br>
+        <button id="window-main__login-button" type="submit">Log in</button>
+    </div>
+    <div id="window-main__sign-up">
+        Don't have a free account?
+        <a id="window-main__sign-up-link" href="#">Sign up</a>
+    </div>
+</main>
+<script src="../../option.js"></script>
+<script src="scripts/to_sign_up.js"></script>
+<script src="scripts/sign_in.js"></script>
+</body>
+</html>

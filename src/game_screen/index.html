@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Far Cry Launcher</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <img class="icon" src="../../assets/minimize.png" alt="" onclick="minimizeWindow()" id="minimize-icon">
+</nav>
+<div class="content">
+    <img class="avatar" id="avatar" src="../../assets/avatar_default.jpeg" alt="">
+    <label for="avatar" id="user_name">John Doe</label>
+    <div class="player-stat">
+        <img src="../../assets/kill_icon.png">
+        <p class="kill_text" id="kill_text">99</p>
+        <img src="../../assets/death_icon.png">
+        <p class="death_text" id="death_text">99</p>
+        <img src="../../assets/suicide_icon.png">
+        <p class="suicide_text" id="suicide_text">99</p>
+    </div>
+    <p id="error-mess">Game already run</p>
+</div>
+<footer>
+    <button id="play_btn" onclick="loadConfig()">PLAY</button>
+    <button id="log-out_btn" onclick="logOut()">LOG OUT</button>
+    <a href="#" onclick="openPathBrowser()">Change game path</a>
+</footer>
+<script src="../../option.js"></script>
+<script src="./scripts/function.js"></script>
+</body>
+</html>

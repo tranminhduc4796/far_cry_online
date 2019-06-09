@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #3c424c;
+}
+
+#window-background__layer {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -100;
+}
+
+#window-header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-self: stretch;
+    -webkit-app-region: drag;
+}
+
+.option {
+    font-weight: bold;
+    -webkit-app-region: no-drag;
+    border: none;
+    padding: 5px;
+    outline: none;
+    color: gainsboro;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.option:hover {
+    color: greenyellow;
+}
+
+#window-header__minimize {
+    font-size: 10px;
+    padding-top: 8px;
+}
+
+#window-main__image {
+    height: auto;
+    width: 200px;
+    margin-top: -35px;
+    margin-left: 55px;
+    -webkit-user-drag: none;
+}
+
+#window-main__login-form {
+    margin: 0 20px;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.window-main__input {
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+#window-main__login-button {
+    height: 50px;
+    background: rgba(93, 176, 79, 0.67);
+    border: none;
+    color: gainsboro;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+}
+
+#window-main__sign-up {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 93%;
+    padding: 10px;
+    color: grey;
+}
+
+#window-main__sign-up a {
+    color: grey;
+}
+
+#window-main__sign-up a:hover {
+    color: gainsboro;
+}

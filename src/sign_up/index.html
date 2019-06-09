@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Far Cry Online</title>
+<link rel="stylesheet" href="css/sign_up.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div id="window-background__layer"></div>
+<header id="window-header">
+    <button class="option" id="window-header__close">
+        <i class="fas fa-times"></i>
+    </button>
+    <button class="option" id="window-header__minimize">
+        <i class="fas fa-minus"></i>
+    </button>
+</header>
+<main>
+    <div id="window-main__title">
+        <img id="window-main__image" src="../../assets/farcry_logo.png">
+    </div>
+    <div id="window-main__sign-up-form" class="window-main__sign-up-error">
+        <p id="window-main__error-log"></p>
+        <input id="username" name="username" class="window-main__input" type="text" placeholder="Username">
+        <p class="window-main__sign-up-error"></p>
+        <p class="window-main__sign-up-requirement">
+            6-20 characters. Including aA-zZ, [0-9].
+        </p>
+        <input id="email" name="email" class="window-main__input" id="window-main__email" type="email" placeholder="Email">
+        <p class="window-main__sign-up-error"></p>
+        <div id="window-main__password">
+            <input id="password" name="password" class="window-main__input" type="password" placeholder="Password">
+            <input id="reconfirm_password" name="reconfirm_password" class="window-main__input" type="password" placeholder="Reconfirm Password">
+             <i class="far fa-eye-slash" id="window-main__show-password"></i>
+        </div>
+        <p id="window-main__reconfirm-error" class="window-main__sign-up-error"></p>
+        <p class="window-main__sign-up-requirement">
+            Your password MUST be at least 8-35 characters and contain 1 uppercase letter, 1 lowercase letter, 1 numeric digit, 1 non-word character, but no whitespace.
+        </p>
+        <br><br>
+        <button id="window-main__sign-up-button" type="submit">Join the army</button>
+    </div>
+    <div id="window-main__sign-in">
+        Already have an account?
+        <a id="window-main__sign-in-link" href="#">Sign in</a>
+    </div>
+</main>
+<script src="../../option.js"></script>
+<script src="./scripts/show_password.js"></script>
+<script src="./scripts/to_sign_in.js"></script>
+<script src="scripts/sign_up.js"></script>
+<script src="./scripts/verify_sign_up.js"></script>
+</body>
+</html>
